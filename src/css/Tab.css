@@ -1,17 +1,45 @@
+@media screen and (max-width: 500px) {
+    .listItem {
+        float: none;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .button {
+        display: none;
+    }
+}
+
+.individualTab {
+    width: 100%;
+    overflow: auto;
+}
+
 .listItem {
-    list-style-type: none;
+    float: left;
+    vertical-align: middle;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.active {
+    background-color: black;
 }
 
 .button {
+    outline: none;
+    text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 15px;
-    font-weight: bold;
+    font-size: 17px;
     background: none;
     color: white;
-    border: none;
     padding: 10px 10px 10px 10px;
+    border: none;
 }
 
-.button:hover {
-    background-color: #A9A9A9;
+.listItem:hover {
+    background-color: silver;
 }
