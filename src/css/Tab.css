@@ -5,9 +5,13 @@
     }
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 850px),
+screen and (max-height: 250px) {
     .button {
         display: none;
+    }
+    .individualTab {
+        display: inline;
     }
 }
 
@@ -18,7 +22,6 @@
 
 .listItem {
     float: left;
-    vertical-align: middle;
     padding: 12px;
     color: white;
     text-decoration: none;
@@ -29,13 +32,17 @@
     background-color: black;
 }
 
+.icon {
+    margin-bottom: -8px;
+}
+
 .button {
     outline: none;
+    vertical-align: middle;
     text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Arial;
     font-size: 17px;
     background: none;
-    color: white;
     padding: 10px 10px 10px 10px;
     border: none;
 }

@@ -11,16 +11,18 @@ class TabContainer extends Component {
         this.tabChange = this.tabChange.bind(this);
 
     }
-
+    // executed when onClick of tab button in Tab component
     tabChange = (t, actionFunction) => {
         this.setState({
             selectedTab: t
         })
-        console.log(actionFunction)
     }
     render() {
+        let styles = this.props.allignmentStyle;
         return (
-            <div className='tabSection'>
+            <div className='tabSection' style={styles[0].bottom && styles[0].top ? { marginTop: '40%' } :
+                styles[0].bottom && !styles[0].top ? { marginTop: '16%' } : {}}>
+
                 {this.props.json.map((tab, i) => {
                     return <Tab key={tab.id} details={tab} tabChange={this.tabChange} index={this.state.selectedTab} allignment={this.props.allignmentStyle[0]} />
                 })}
