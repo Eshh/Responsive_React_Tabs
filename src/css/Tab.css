@@ -5,19 +5,16 @@
     }
 }
 
-@media screen and (max-width: 850px),
-screen and (max-height: 250px) {
+@media screen and (max-width: 1050px),
+screen and (max-height: 450px) {
     .button {
         display: none;
-    }
-    .individualTab {
-        display: inline;
     }
 }
 
 .individualTab {
     width: 100%;
-    overflow: auto;
+    overflow: hidden;
 }
 
 .rightClass {
@@ -26,6 +23,7 @@ screen and (max-height: 250px) {
     color: white;
     text-decoration: none;
     font-size: 17px;
+    width: calc(80% / 7);
 }
 
 .listItem {
@@ -34,6 +32,7 @@ screen and (max-height: 250px) {
     color: white;
     text-decoration: none;
     font-size: 17px;
+    width: calc(80% / 7);
 }
 
 .active {
@@ -42,6 +41,7 @@ screen and (max-height: 250px) {
 
 .icon {
     margin-bottom: -8px;
+    margin-left: 5px
 }
 
 .button {
